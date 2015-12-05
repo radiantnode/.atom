@@ -1,0 +1,33 @@
+"*":
+  "exception-reporting":
+    userId: "a7eba05e-ca96-3c92-2a78-203ac09b2d77"
+  welcome:
+    showOnStartup: false
+  core: {}
+  editor:
+    invisibles: {}
+    fontFamily: "Menlo"
+    softWrap: true
+    tabType: "soft"
+    showIndentGuide: true
+    zoomFontWhenCtrlScrolling: true
+  minimap:
+    plugins:
+      pigments: true
+  autosave:
+    enabled: true
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-plus": {}
+  "git-status": {}
+  "wrap-guide":
+    enabled: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+  "one-dark-ui": {}
+  alignment: {}
+  "markdown-preview": {}
+  "tree-view":
+    hideIgnoredNames: true
+  "color-picker":
+    abbreviateValues: true
