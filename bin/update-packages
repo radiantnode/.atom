@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+#https://github.com/substantial/atomfiles
+
+PATH = File.expand_path('../..', __FILE__)
+PACKAGES_TXT = File.join(PATH, "packages.txt")
+
+def package_list
+  "apm list --installed --bare --dev false"
+end
+
+def main
+  installed = parse_package_list(`#{package_list}`)
+  packages_txt = parse_package_list(File.read(PACKAGES_TXT))
+
+  packages_to_remove(packages_txt, installed).each do |name, _|
+    puts "Found package \"#{name}\" that is not in packages.txt."
+    puts "If you installed this and want to keep it, type \"keep\": "
+    line = readline.chomp
+    next if line == "keep"
+
+    system("apm uninstall #{name}")
+  end
+
+  # Install only updated or missing packages
+  packages_to_install(packages_txt, installed).each do |name, version|
+    system("apm install #{name}@#{version}")
+  end
+
+  # Write new packages.txt
+  `#{package_list} > #{PACKAGES_TXT}`
+
+  puts "Done!"
+end
+
+def packages_to_remove(packages_txt, installed)
+  installed.reject { |name, _| packages_txt.key?(name) }
+end
+
+def packages_to_install(packages_txt, installed)
+  packages_txt.select { |name, version|
+    !installed.key?(name) ||
+      Gem::Version.new(version) > Gem::Version.new(installed[name])
+  }
+end
+
+def parse_package_list(list)
+  Hash[list.lines
+    .map(&:strip)
+    .reject(&:empty?)
+    .map { |line| parse_package(line.strip) }]
+end
+
+def parse_package(line)
+  name, version = line.split("@")
+  [name, version]
+end
+
+main if __FILE__ == $PROGRAM_NAME

@@ -1,0 +1,10 @@
+alignment@1.1.5
+atom-bootstrap3@1.2.12
+atom-bootstrap4@1.2.13
+file-icons@1.6.13
+git-control@0.4.0
+language-haml@0.23.13
+language-nginx@0.6.1
+minimap@4.16.2
+minimap-pigments@0.1.7
+rails-snippets@1.16.0
