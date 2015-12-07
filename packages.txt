@@ -8,3 +8,4 @@ language-nginx@0.6.1
 minimap@4.16.2
 minimap-pigments@0.1.7
 rails-snippets@1.16.0
+
