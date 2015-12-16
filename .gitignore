@@ -4,3 +4,4 @@ storage/
 nohup.out
 .apm
 packages
+blob-store

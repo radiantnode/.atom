@@ -31,3 +31,9 @@
     hideIgnoredNames: true
   "color-picker":
     abbreviateValues: true
+  "terminal-plus":
+    core: {}
+    style: {}
+  pigments: {
+    markerType: 'square-dot'
+  }
