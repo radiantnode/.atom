@@ -5,8 +5,8 @@ file-icons@1.6.13
 git-control@0.4.0
 language-haml@0.23.14
 language-nginx@0.6.1
-minimap@4.18.1
-minimap-pigments@0.1.7
+minimap@4.18.2
+open-recent@4.0.1
 pigments@0.19.3
 rails-snippets@2.0.0
 terminal-plus@0.14.5

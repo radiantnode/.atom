@@ -34,6 +34,6 @@
   "terminal-plus":
     core: {}
     style: {}
-  pigments: {
-    markerType: 'square-dot'
-  }
+  pigments:
+    markerType: "square-dot"
+  "open-recent": {}

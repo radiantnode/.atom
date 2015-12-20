@@ -16,8 +16,10 @@ Uses a package management strategy by [substantial/atomfiles](https://github.com
 * [language-haml](https://github.com/ezekg/language-haml)
 * [language-nginx](https://github.com/hnagato/atom-language-nginx)
 * [minimap](https://github.com/atom-minimap/minimap)
-* [minimap-pigments](https://github.com/abe33/minimap-pigments)
+* [open-recent](https://github.com/Zren/atom-open-recent)
+* [pigments](https://github.com/abe33/atom-pigments)
 * [rails-snippets](https://github.com/joseramonc/rails-snippets)
+* [terminal-plus](https://github.com/jeremyramin/terminal-plus)
 
 ## Setup
 
