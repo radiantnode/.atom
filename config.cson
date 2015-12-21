@@ -11,9 +11,7 @@
     tabType: "soft"
     showIndentGuide: true
     zoomFontWhenCtrlScrolling: true
-  minimap:
-    plugins:
-      pigments: true
+  minimap: {}
   autosave:
     enabled: true
   "git-diff":
@@ -37,3 +35,5 @@
   pigments:
     markerType: "square-dot"
   "open-recent": {}
+  gist: {}
+  emmet: {}

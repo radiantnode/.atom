@@ -1,11 +1,15 @@
 alignment@1.1.5
 atom-bootstrap3@1.2.12
 atom-bootstrap4@1.4.0
+close-after-last-tab@0.1.6
+emmet@2.3.17
 file-icons@1.6.13
+gist@0.2.8
 git-control@0.4.0
 language-haml@0.23.14
 language-nginx@0.6.1
-minimap@4.18.2
+minimap@4.18.3
+open-in-browser@0.4.6
 open-recent@4.0.1
 pigments@0.19.3
 rails-snippets@2.0.0
